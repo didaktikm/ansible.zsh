@@ -14,7 +14,7 @@ title "Install Ansible"
 #sudo apt-get update
 yum install curl ansible -y
 
-title "Install viasite-ansible.zsh"
+title "Install ansible.zsh"
 ansible-galaxy install didaktikm.ansible_zsh --force
 
 title "Download playbook to /tmp/zsh.yml"
