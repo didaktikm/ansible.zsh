@@ -15,10 +15,10 @@ title "Install Ansible"
 yum install curl ansible -y
 
 title "Install viasite-ansible.zsh"
-ansible-galaxy install viasite-ansible.zsh --force
+ansible-galaxy install didaktikm.ansible_zsh --force
 
 title "Download playbook to /tmp/zsh.yml"
-curl https://raw.githubusercontent.com/viasite-ansible/ansible-role-zsh/master/playbook.yml > /tmp/zsh.yml
+curl https://raw.githubusercontent.com/didaktikm/ansible.zsh/master/playbook.yml > /tmp/zsh.yml
 
 title "Provision playbook for root"
 ansible-playbook -i "localhost," -c local /tmp/zsh.yml
