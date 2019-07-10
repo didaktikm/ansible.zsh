@@ -56,7 +56,7 @@
 - name: Write .vimrc config
   template:
     src: vimrc.j2
-    dest: "{{ zsh_config }}"
+    dest: "{{ vim_config }}"
     owner: "{{ zsh_user }}"
     group: "{{ zsh_user_group }}"
     backup: yes
