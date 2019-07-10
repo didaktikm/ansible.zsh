@@ -629,11 +629,11 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " For ruby refactory
-if has('nvim')
-  runtime! macros/matchit.vim
-else
-  exit 0
-endif
+"if has('nvim')
+"  runtime! macros/matchit.vim
+"else
+"  exit 0
+"endif
 
 " Ruby refactory
 nnoremap <leader>rap  :RAddParameter<cr>
