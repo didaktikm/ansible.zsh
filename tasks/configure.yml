@@ -52,6 +52,14 @@
     owner: "{{ zsh_user }}"
     group: "{{ zsh_user_group }}"
     backup: yes
+    
+- name: Write .vimrc config
+  template:
+    src: vimrc.j2
+    dest: "{{ zsh_config }}"
+    owner: "{{ zsh_user }}"
+    group: "{{ zsh_user_group }}"
+    backup: yes
 
 - name: Set zsh as default shell
   user:
