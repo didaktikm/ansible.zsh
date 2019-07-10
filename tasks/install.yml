@@ -1,6 +1,6 @@
 ---
 
-- name: Install zsh, git, wget
+- name: Install zsh, git, wget, vim
   package:
     name: "{{ item }}"
     state: present
