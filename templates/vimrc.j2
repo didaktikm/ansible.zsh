@@ -632,7 +632,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 if has('nvim')
   runtime! macros/matchit.vim
 else
-  packadd! matchit
+  exit 0
 endif
 
 " Ruby refactory
